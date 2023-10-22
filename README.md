@@ -144,3 +144,37 @@ gp env HELLO='world'
 All future workspaces launched will set the env vars for all bash terminals open in those workspaces
 
 You can also set env vars in the `.gitpod.yml` but this can only contain non-sensitive env vars
+
+### AWS CLI Installation
+
+AWS CLI is installed for this project via the bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+[Install or update the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+####    AWS CLI Env Vars
+
+Env Vars CLI example:
+
+```sh
+export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+export AWS_DEFAULT_REGION=us-west-2
+```
+
+[AWS CLI Env Vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if our AWS credentials are configured correctly by running the followwing command:
+
+AWS CLI Command:
+```sh
+aws sts get-caller-identity
+```
+
+If it is succesful you should see a JSON payload retrun that looks like this:
+```json
+    "UserId": "IDAD23APV7GT6ZJHA4tytyYP",
+    "Account": "745328345312",
+    "Arn": "arn:aws:iam::745328345312:user/terraform-beginner-bootcamp"
+```
+We will need to generate AWS CLI credentials for IAM user in order to use the AWS CLI.
+
