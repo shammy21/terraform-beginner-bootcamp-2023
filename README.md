@@ -214,6 +214,12 @@ We can output this changeset i.i. "plan" to be passed to an apply, but often you
 
 This will run the plan and pass changeset to executred by terraform Apply should propmt yes or no. If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
+### Terraform Destroy
+
+This will destroy resources
+
+If we want to automatically approve a `terraform destroy` we can provide the auto approve flag eg. `terraform destroy --auto-approve`
+
 ### Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modules that should be used with this project
