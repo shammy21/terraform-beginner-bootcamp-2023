@@ -272,3 +272,5 @@ Provide the following code(replace your token int the file):
 
 
 Then open the file manually 
+
+We have automated this work around with the following bash script [bin/generate_tfrc_credentials]
