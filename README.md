@@ -2,12 +2,6 @@
 
 ##  Table of Contents
 
-- [Semantic Versioning](#semantic-versioning)
-- [Install the Terraform CLI](#install-the-terraform-cli)
-- [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
-
-
-
 ## Semantic Versioning
 
 This project is going to utilize semantic versioning for its tagging 
